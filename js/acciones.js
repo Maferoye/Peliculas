@@ -1,5 +1,6 @@
 function BuscarPorNombre(Quien)
 {
+	alert('funcion');
 	datos="Nombre="+Quien;
 	$.ajax({
 		type:"POST",
@@ -10,6 +11,7 @@ function BuscarPorNombre(Quien)
 		var DatosJSON=JSON.parse(msg);
 		if (DatosJSON.datos==1)
 		{
+			alert('datos');
 			$('#Resultados').empty();
 			for (var i=0; i<DatosJSON.pelis.length;i++)
 			{
@@ -21,7 +23,7 @@ if (DatosJSON.datos==0)
 			alert('No hay Peliculas que Mostrar con ese Nombre');
 		}		
 		
-		
+		$('#Nom').trigger('pagecreate');
 	});
 }
 
@@ -30,7 +32,9 @@ if (DatosJSON.datos==0)
 $(document).ready(function(e) {
 	document.addEventListener("deviceready",function(){
   $('#BNombre').tap(function(){
+	  alert('dentro');
     BuscarPorNombre($('#buscar').text());
+	alert('afuera');
   });
  },false); //deviceready
  
