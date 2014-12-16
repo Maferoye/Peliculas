@@ -3,8 +3,8 @@ function BuscarPorNombre(Quien)
 	alert('funcion');
 	datos="Nombre="+Quien;
 	$.ajax({
-		type:"POST",
-		url:"http://192.168.1.177/catalogo peliculas/consultanombre.php",
+		type: "POST",
+		url: "http://192.168.1.177/catalogo%20peliculas/consultanombre.php",
 		data: datos
 	}).done(function(msg){
 		alert(msg);
