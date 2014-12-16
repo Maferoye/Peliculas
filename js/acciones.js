@@ -31,6 +31,7 @@ if (DatosJSON.datos==0)
 
 $(document).ready(function(e) {
 	document.addEventListener("deviceready",function(){
+		
   $('#BNombre').tap(function(){
 	  alert('dentro');
     BuscarPorNombre($('#buscar').text());
