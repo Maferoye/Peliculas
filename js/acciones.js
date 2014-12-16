@@ -15,8 +15,8 @@ function BuscarPorNombre(Quien)
 			$('#Resultados').empty();
 			for (var i=0; i<DatosJSON.peli.length;i++)
 			{
-				alert(DatosJSON.pelis.length);
-			  $('#Resultados').append('<div style="float:left; width:50%"><h4>Nombre:'+DatosJSON.pelis[i].Nombre+'</h4><div id="RNombre"></div><h4>Director:'+DatosJSON.pelis[i].Director+'</h4><div id="RDirector"></div><h4>Genero:'+DatosJSON.pelis[i].Genero+'</h4><div id="RGenero"></div></div><div style="float:right; width:50%"><img src="http://192.168.1.177/catalogopeliculas/recursos/fotos/'+DatosJSON.pelis[i].Id+'.jpg"></div>');	
+				alert(DatosJSON.peli.length);
+			  $('#Resultados').append('<div style="float:left; width:50%"><h4>Nombre:'+DatosJSON.peli[i].Nombre+'</h4><div id="RNombre"></div><h4>Director:'+DatosJSON.peli[i].Director+'</h4><div id="RDirector"></div><h4>Genero:'+DatosJSON.peli[i].Genero+'</h4><div id="RGenero"></div></div><div style="float:right; width:50%"><img src="http://192.168.1.177/catalogopeliculas/recursos/fotos/'+DatosJSON.peli[i].Id+'.jpg"></div>');	
 			}
 			$('#Nom').trigger('pagecreate');
 		}
