@@ -33,7 +33,7 @@ $(document).ready(function(e) {
 	document.addEventListener("deviceready",function(){
 		
   $('#BNombre').tap(function(){
-	  alert('dentro');
+	  alert($('#buscar').text());
     BuscarPorNombre($('#buscar').text());
 	alert('afuera');
   });
