@@ -49,7 +49,7 @@ function Listado(Quien)
 			for (var i=0; i<DatosJSON.peli.length;i++)
 			{
 				
-			  $('#Tabla').append('<div align="justify"><div style="float:left; width:50%"><h4>Id Pelicula:'+DatosJSON.peli[i].Id+'</h4><div id="RIdPelicula"></div><h4>Nombre:'+DatosJSON.peli[i].Nombre+'</h4><div id="RNombre"></div><h4>Director:'+DatosJSON.peli[i].Director+'</h4><div id="RDirector"></div><h4>Genero:'+DatosJSON.peli[i].Genero+'</h4><div id="RGenero"></div><h4>Duracion:'+DatosJSON.peli[i].Duracion+'</h4><div id="RDuracion"></div></div><div style="float:right; width:50%"><img src="http://192.168.1.177/catalogopeliculas/recursos/fotos/'+DatosJSON.peli[i].Id+'.jpg" class="FotosP"></div></div><strong><hr></strong>');	
+			  $('#Tabla').append('<div style="float:left; width:50%"><h4>Id Pelicula:'+DatosJSON.peli[i].Id+'</h4><div id="RIdPelicula"></div><h4>Nombre:'+DatosJSON.peli[i].Nombre+'</h4><div id="RNombre"></div><h4>Director:'+DatosJSON.peli[i].Director+'</h4><div id="RDirector"></div><h4>Genero:'+DatosJSON.peli[i].Genero+'</h4><div id="RGenero"></div><h4>Duracion:'+DatosJSON.peli[i].Duracion+'</h4><div id="RDuracion"></div><div style="float:right; width:50%"><img src="http://192.168.1.177/catalogopeliculas/recursos/fotos/'+DatosJSON.peli[i].Id+'.jpg" class="FotosP"></div></div><strong><hr></strong>');	
 			}
 			$('.FotosP').width($('#Tabla').width()*.2);
 			$('#Nom').trigger('pagecreate');
