@@ -49,7 +49,7 @@ function Listado()
 			for (var i=0; i<DatosJSON.peli.length;i++)
 			{
 				
-			  $('#Tabla').append('<img  src="http://192.168.1.177/catalogopeliculas/recursos/fotos/'+DatosJSON.peli[i].Id+'.jpg" class="FotosP">');	
+			  $('#Tabla').append('<img src="http://192.168.1.177/catalogopeliculas/recursos/fotos/'+DatosJSON.peli[i].Id+'.jpg" class="FotosP">' + DatosJSON.peli[i].Id);	
 			}
 			$('.FotosP').width($('#Tabla').width()*0.2);
 			$('#Nom').trigger('pagecreate');
